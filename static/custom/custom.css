@@ -14,3 +14,15 @@ main>.container {
     padding-right: 15px;
     padding-left: 15px;
 }
+
+.no-under-link {
+    text-decoration: none;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.card-main {
+    min-height: 250px;
+}

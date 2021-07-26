@@ -40,7 +40,9 @@
           <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link" href="allentries">Entradas</a>
+                <a class="nav-link active" href="allentries">Entradas
+                  <span class="visually-hidden">(current)</span>
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about">Sobre Nosotros</a>
@@ -54,61 +56,64 @@
     <!-- Begin page content -->
     <main class="flex-shrink-0">
       <div class="container">
-        <h1 class="mt-2 text-center">DatablogCL</h1>
+        <h1 class="mt-2 text-center">Entradas del blog</h1>
         <hr>
         <div class="row">
           <div class="col-md-10 offset-md-1">
             <p class="lead text-justify">
-              ¡Bienvenido a DatablogCL! En este lugar vas a encontrar el material que te permitirá aprender por tu cuenta temas relacionados al manejo de datos y al área de <em>Machine Learning</em>. Nuestros últimos <em>posts</em> son los siguientes:
-              <ul>
-                <li>
-                  <a href="#" class="card-link no-under-link">Post 1</a>
-                </li>
-                <li>
-                  <a href="#" class="card-link no-under-link">Post 2</a>
-                </li>
-              </ul>
+              Aquí vas a encontrar todos los <em>posts</em> del blog, separados en temas de manejo de datos y <em>Machine Learning</em>.
             </p>
           </div>
         </div>
         <hr>
-        <div class="row">
-          <div class="col mb-2">
-            <div class="card card-main">
-              <div class="card-body">
-                <h4 class="card-title">Sobre este blog</h4>
-                <p class="card-text text-justify">En este blog nos interesa hablar sobre dos temas: cómo manejar datos de forma eficiente y cómo analizar datos con técnicas de <em>Machine Learning</em>. Así, podrás dar tus primeros pasos como <em>Data Scientist</em> 💪🏻. Para ver nuestros <em>posts</em> puedes revisar el link más abajo.</p>
-                <a href="#" class="card-link no-under-link">¡Ver más!</a>
+        <div class="accordion mt-2" id="accordion-entries">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="entriesdb">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedb" aria-expanded="false" aria-controls="collapsedb">
+                Entradas sobre Manejo de Datos
+              </button>
+            </h2>
+            <div id="collapsedb" class="accordion-collapse collapse" aria-labelledby="entriesdb" data-bs-parent="#accordion-entries">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a href="#" class="card-link no-under-link">Post 1</a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-link no-under-link">Post 2</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col mb-2">
-            <div class="card card-main">
-              <div class="card-body">
-                <h4 class="card-title">¿Cómo seguir este blog?</h4>
-                <p class="card-text text-justify">Estamos convencido que para aprender necesitas poner las manos en el código 💻. Por lo mismo, muchas de las entradas de este blog tendrán asociados un <em>Jupyter Notebook</em> que puedes correr en linea para practicar los contenidos por tu cuenta. Para comprender cómo usar estos recursos puedes revisar el link más abajo.</p>
-                <a href="#" class="card-link no-under-link">¡Ver más!</a>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-2">
-            <div class="card card-main">
-              <div class="card-body">
-                <h4 class="card-title">¿Quiénes somos?</h4>
-                <p class="card-text text-justify">Somos dos investigadores que han estudiado temas relacionados al mundo de los datos 💾 por años, y además, también hemos dictado varios cursos relacionados a estos temas. Por lo mismo, queremos poner a disposición de todas las personas parte del material que hemos generado.</p>
-                <a href="#" class="card-link no-under-link">¡Ver más!</a>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="entriesml">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseml" aria-expanded="false" aria-controls="collapseml">
+                Entradas sobre Machine Learning.
+              </button>
+            </h2>
+            <div id="collapseml" class="accordion-collapse collapse" aria-labelledby="entriesml" data-bs-parent="#accordion-entries">
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a href="#" class="card-link no-under-link">Post 3</a>
+                  </li>
+                  <li>
+                    <a href="#" class="card-link no-under-link">Post 4</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </main>
     
     <div class="mt-5"></div>
     <footer class="footer mt-auto py-3">
-      <div class="container">
-        <span class="text-muted">DatablogCL, Chile, 2021.</span>
-      </div>
+        <div class="container">
+            <span class="text-muted">DatablogCL, Chile, 2021.</span>
+        </div>
     </footer>
     <script src="static/jquery/jquery.min.js"></script>
     <script src="static/fontawesome/js/all.min.js"></script>
